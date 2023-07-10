@@ -93,7 +93,7 @@ const Testimoni = ({
         {listTestimoni.map((listTestimonis, index) => (
           <a key={index} href={listTestimonis.link}>
             <div className="px-3 flex items-stretch h-96" key={index}>
-              <div className="border-2 border-gray-500 hover:border-brown-400 transition-all rounded-lg p-10 flex flex-col bg-white-500 bg-opacity-50">
+              <div className="border-2 border-gray-500 hover:border-brown-400 transition-all rounded-lg p-10 flex flex-col bg-white-500 bg-opacity-60">
                 <div className="flex flex-col w-full items-stretch xl:items-center ">
                   <div className="flex order-2 xl:order-1">
                     <Image
