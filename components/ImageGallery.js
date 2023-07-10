@@ -28,6 +28,18 @@ const ImageGallery = () => {
       id: 5,
       value: "/assets/talkshow.jpg",
     },
+    {
+      id: 6,
+      value: "/assets/arie-2.jpg",
+    },
+    {
+      id: 7,
+      value: "/assets/arie-3.jpg",
+    },
+    {
+      id: 8,
+      value: "/assets/arie-4.jpg",
+    },
   ];
   return (
     <div>

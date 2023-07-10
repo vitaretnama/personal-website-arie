@@ -7,7 +7,7 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const backgroundStye = {
-    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://assets-a1.kompasiana.com/items/album/2018/04/25/img-20180425-wa0013-5ae076babde5750a3d2e5e42.jpg')`,
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/article-background.jpg')`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
