@@ -12,26 +12,36 @@ const Testimoni = ({
       image: "/assets/filosofinew.jpg",
       link: "https://malangposcomedia.id/arie-aripin-berharap-indonesia-pimpin-kopi-dunia/",
       text: "Pendapat Arie Aripin Mengenai Kopi Yang Sangat Filosofis",
+      width: 300,
+      height: 200,
     },
     {
       image: "/assets/arie.jpg",
       link: "https://tugumalang.id/gaungkan-gastronomi-malang-ke-dunia-bersama-arie-aripin-dan-chef-handry-wahyu/ ",
       text: "Gaungkan Gastronomi Malang Ke Dunia",
+      width: 270,
+      height: 200,
     },
     {
       image: "/assets/anak.jpeg",
       link: "https://malangposcomedia.id/kawal-impian-anak-menuju-indonesia-emas-2045/",
       text: "Kawal Impian Anak Menuju Indonesia Emas 2045",
+      width: 250,
+      height: 200,
     },
     {
       image: "/assets/kulinernew.jpeg",
       link: "https://malangposcomedia.id/sukses-promosikan-kuliner-indonesia-di-paris/",
       text: "Sukses Promosikan Kuliner Indonesia di Paris",
+      width: 200,
+      height: 200,
     },
     {
       image: "/assets/talkshow.jpg",
       link: "https://malangposcomedia.id/gelar-talk-show-bangun-generasi-emas-indonesia/",
       text: "Gelar Talkshow Bangun Generasi Emas",
+      width: 270,
+      height: 200,
     },
   ],
 }) => {
@@ -57,7 +67,7 @@ const Testimoni = ({
         breakpoint: 770,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2, 
+          slidesToScroll: 2,
           initialSlide: 2,
         },
       },
@@ -80,16 +90,16 @@ const Testimoni = ({
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
       >
-       {listTestimoni.map((listTestimonis, index) => (
+        {listTestimoni.map((listTestimonis, index) => (
           <a key={index} href={listTestimonis.link}>
-            <div className="px-3 flex items-stretch" key={index}>
-              <div className="border-2 border-gray-500 hover:border-brown-400 transition-all rounded-lg p-10 flex flex-col bg-white-500 bg-opacity-50">
+            <div className="px-3 flex items-stretch h-96" key={index}>
+              <div className="border-2 border-gray-500 hover:border-brown-400 transition-all rounded-lg p-10 flex flex-col bg-white-500 bg-opacity-60">
                 <div className="flex flex-col w-full items-stretch xl:items-center ">
                   <div className="flex order-2 xl:order-1">
                     <Image
                       src={listTestimonis.image}
-                      height={150}
-                      width={200}
+                      height={listTestimonis.height}
+                      width={listTestimonis.width}
                       className="w-full"
                       alt="Icon People"
                     />
@@ -107,7 +117,7 @@ const Testimoni = ({
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-brown-400 border hover:bg-brown-400 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
-            <ArrowBack className="h-6 w-6 " stroke='#7B3F00'  />
+            <ArrowBack className="h-6 w-6 " stroke='#7B3F00' />
           </div>
           <div
             className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-brown-400 border hover:bg-brown-400 hover:text-white-500 transition-all text-orange-500 cursor-pointer"

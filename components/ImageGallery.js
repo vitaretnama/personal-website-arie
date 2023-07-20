@@ -28,27 +28,38 @@ const ImageGallery = () => {
       id: 5,
       value: "/assets/talkshow.jpg",
     },
+    {
+      id: 6,
+      value: "/assets/arie-2.jpg",
+    },
+    {
+      id: 7,
+      value: "/assets/arie-3.jpg",
+    },
+    {
+      id: 8,
+      value: "/assets/arie-4.jpg",
+    },
   ];
   return (
     <div>
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry gutter="20px">
           {images.map((image, i) => (
-            <Image
-              src={image.value}
-              height={0}
-              width={0}
-              key={i}
-              className="w-full"
-              alt="Icon People"
-              style={{
-                width: "100%",
-                display: "block",
-                cursor: "pointer",
-                height: "auto",
-              }}
-              sizes="100vw"
-            />
+            <div key={i}>
+              <Image
+                src={image.value}
+                alt="Icon People"
+                width={300}
+                height={200}
+                objectFit="cover"
+                style={{
+                  display: "block",
+                  cursor: "pointer",
+                  height: "auto",
+                }}
+              />
+            </div>
           ))}
         </Masonry>
       </ResponsiveMasonry>
